@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "soschurch.se",
-    "slug": "soschurch.se",
+    "name": "SOS Church",
+    "slug": "soschurch",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0E0E14",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +19,18 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "name": "SOS Church Stockholm"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-status-bar"
+    ],
+    "scheme": "soschurch",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
