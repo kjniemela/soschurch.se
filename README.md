@@ -12,6 +12,20 @@ npm start         # then scan the QR code with Expo Go on a phone
 
 The project is pinned to **Expo SDK 57** so it opens in Expo Go 57. To move to a newer SDK, run `npm install expo@~<version>` and then `npx expo install --fix`.
 
+## Web deployment (GitHub Pages)
+
+Every push to `master` runs [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). It typechecks the code, exports a static site (one pre-rendered HTML file per page) and publishes it to https://kjniemela.github.io/soschurch.se/. You can also start it by hand from the Actions tab.
+
+One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+The site lives under `/soschurch.se/`, so the workflow passes that path to the build as `EXPO_BASE_URL` (see [app.config.ts](app.config.ts)). With a custom domain the path is empty and nothing else needs to change. To test a Pages build locally:
+
+```bash
+EXPO_BASE_URL=/soschurch.se npx expo export --platform web
+```
+
+In Git Bash on Windows, add `MSYS_NO_PATHCONV=1` before the command, or the path gets rewritten.
+
 ## How it's organised
 
 - `src/app/` — routes (Expo Router). Every file is a page; URLs match file names.
