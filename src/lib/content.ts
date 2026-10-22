@@ -1,5 +1,3 @@
-import type { Href } from 'expo-router';
-
 // Prototype content, copied from soschurch.se in October 2026.
 // Swap this module for a CMS / Church Center feed once the data source is decided.
 
@@ -81,27 +79,6 @@ export const events: ChurchEvent[] = [
     place: 'Stureplan',
   },
 ];
-
-export type NextStep = { label: string; href?: Href; url?: string };
-
-export const nextSteps: NextStep[] = [
-  { label: 'I want to follow Jesus', href: '/new-believers' },
-  { label: 'I want to join a Life Group', href: '/life-groups' },
-  { label: 'I want to join the Bible school', href: '/bible-school' },
-  { label: 'I want to get baptized', url: 'https://soschurch.se/baptism' },
-  { label: 'I want to go on a mission trip', url: 'https://soschurch.se/mission-trip' },
-  { label: 'I want to join a Dream Team', url: 'https://soschurch.se/promote' },
-  { label: 'I want to give', href: '/give' },
-];
-
-export const churchLife = [
-  { title: 'Life Groups', blurb: 'Weekly gatherings in homes across Stockholm.', href: '/life-groups' },
-  { title: 'SOS Kids', blurb: 'Kids Church for ages 3–9 every Sunday.', href: '/kids' },
-  { title: 'Bible School', blurb: 'A full year focused on Jesus and mission.', href: '/bible-school' },
-  { title: 'Street Mission', blurb: 'Taking the love of Jesus to the city.', url: 'https://soschurch.se/streetmission' },
-  { title: 'Young Adults', blurb: 'Community for the next generation.', url: 'https://soschurch.se/sosyoungadults' },
-  { title: 'Care', blurb: 'Prayer, follow-up and life coaching.', url: 'https://soschurch.se/care' },
-] as const;
 
 export const pastors = [
   {

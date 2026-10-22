@@ -1,0 +1,85 @@
+{
+  "root": {
+    "props": {
+      "title": "Home"
+    }
+  },
+  "content": [
+    {
+      "type": "Hero",
+      "props": {
+        "id": "Hero-welcome",
+        "eyebrow": "SOS Church Stockholm",
+        "title": "Welcome home",
+        "subtitle": "An international church in the heart of downtown Stockholm.",
+        "image": "https://images.squarespace-cdn.com/content/v1/58a71373d482e9a65572dd35/66d77926-8ff5-4b74-a0c0-268db9c82026/Copy+of+6X6B9786.JPG?format=2500w",
+        "size": "tall",
+        "buttons": [
+          { "label": "Plan a visit", "link": "/visit", "variant": "primary" },
+          { "label": "Watch online", "link": "https://www.youtube.com/@SOSChurchSthlm-/streams", "variant": "ghost" }
+        ]
+      }
+    },
+    {
+      "type": "Callout",
+      "props": {
+        "id": "Callout-sunday",
+        "eyebrow": "Sunday Celebration",
+        "heading": "Every Sunday · 10:30 & 13:00",
+        "body": "Venue 81, Drottninggatan 81, Stockholm. Held in English with live translation into Swedish, Farsi and Spanish.",
+        "buttonLabel": "Directions",
+        "buttonLink": "/visit",
+        "buttonVariant": "secondary",
+        "tone": "raised"
+      }
+    },
+    {
+      "type": "EventList",
+      "props": {
+        "id": "EventList-upcoming",
+        "eyebrow": "Upcoming",
+        "heading": "Events",
+        "limit": 5,
+        "tone": "default"
+      }
+    },
+    {
+      "type": "CardGrid",
+      "props": {
+        "id": "CardGrid-church-life",
+        "eyebrow": "Church life",
+        "heading": "Not just an event — a family",
+        "body": "SOS is a place for you. Find your people, grow in faith and serve the city together.",
+        "columns": 3,
+        "tone": "raised",
+        "cards": [
+          { "title": "Life Groups", "text": "Weekly gatherings in homes across Stockholm.", "link": "/life-groups" },
+          { "title": "SOS Kids", "text": "Kids Church for ages 3–9 every Sunday.", "link": "/kids" },
+          { "title": "Bible School", "text": "A full year focused on Jesus and mission.", "link": "/bible-school" },
+          { "title": "Street Mission", "text": "Taking the love of Jesus to the city.", "link": "https://soschurch.se/streetmission" },
+          { "title": "Young Adults", "text": "Community for the next generation.", "link": "https://soschurch.se/sosyoungadults" },
+          { "title": "Care", "text": "Prayer, follow-up and life coaching.", "link": "https://soschurch.se/care" }
+        ]
+      }
+    },
+    {
+      "type": "ButtonList",
+      "props": {
+        "id": "ButtonList-next-steps",
+        "eyebrow": "Next steps",
+        "heading": "Where do you want to go?",
+        "variant": "ghost",
+        "tone": "default",
+        "buttons": [
+          { "label": "I want to follow Jesus", "link": "/new-believers" },
+          { "label": "I want to join a Life Group", "link": "/life-groups" },
+          { "label": "I want to join the Bible school", "link": "/bible-school" },
+          { "label": "I want to get baptized", "link": "https://soschurch.se/baptism" },
+          { "label": "I want to go on a mission trip", "link": "https://soschurch.se/mission-trip" },
+          { "label": "I want to join a Dream Team", "link": "https://soschurch.se/promote" },
+          { "label": "I want to give", "link": "/give" }
+        ]
+      }
+    }
+  ]
+}
